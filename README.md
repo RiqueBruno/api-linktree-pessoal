@@ -36,5 +36,5 @@ Siga os passos abaixo para executar a API em sua máquina.
 
 **1. Clone o repositório:**
 ```bash
-git clone [https://github.com/seu-usuario/api-linktree-pessoal.git](https://github.com/seu-usuario/api-linktree-pessoal.git)
+git clone https://github.com/seu-usuario/api-linktree-pessoal.git
 cd api-linktree-pessoal
