@@ -1,6 +1,6 @@
 # 🌳 API de Linktree Pessoal
 
-Uma API RESTful simples, construída com Node.js, Express e TypeScript, que permite a um usuário gerenciar uma lista de links pessoais, similar ao Linktree.
+Uma API RESTful simples, construída com Node.js, Express, Prisma e TypeScript, que permite a um usuário gerenciar uma lista de links pessoais, similar ao Linktree.
 
 ---
 
@@ -27,6 +27,7 @@ Uma API RESTful simples, construída com Node.js, Express e TypeScript, que perm
 * [MySQL (com driver `mysql2`)](https://github.com/sidorares/node-mysql2)
 * [DotEnv](https://github.com/motdotla/dotenv)
 * [CORS](https://github.com/expressjs/cors)
+* [Prisma](https://www.prisma.io/)
 
 ---
 
