@@ -15,4 +15,10 @@ export default class LinkController {
         return res.status(result.status).json(result.data);
     }
 
+    // GET /links
+    async getAllLinks(req: Request, res: Response) {
+        const result = await this.linkService.getAll();
+        return res.status(result.status).json(result.data);
+    }
+
 }
