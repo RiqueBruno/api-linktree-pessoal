@@ -25,4 +25,9 @@ export default class LinkService {
     
     return MapStatusHttp.okData(link);
   };
+
+  async deleteById(id: number) {
+    const link = await prisma.link.delete({where: {id}});
+    return MapStatusHttp.okData(link);
+  }
 }
