@@ -15,5 +15,14 @@ export default class LinkService {
   async getAll() {
     const links = await prisma.link.findMany();
     return MapStatusHttp.okData(links);
-  };  
+  };
+
+  async getById(id: number) {
+    const link = await prisma.link.findUnique({
+      where: { id },
+    });
+    if (!link) return MapStatusHttp.notFound("Link not found");
+    
+    return MapStatusHttp.okData(link);
+  };
 }
