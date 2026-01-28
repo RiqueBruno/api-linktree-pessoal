@@ -27,4 +27,11 @@ export default class LinkController {
         const result = await this.linkService.getById(Number(id));
         return res.status(result.status).json(result.data);
     };
+
+    // DELETE /links/:id
+    async deleteLinkById(req: Request, res: Response) {
+        const { id } = req.params;
+        const result = await this.linkService.deleteById(Number(id));
+        return res.status(result.status).json(result.data);
+    }
 };
