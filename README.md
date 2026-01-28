@@ -5,7 +5,7 @@ Uma API RESTful simples, construída com Node.js, Express, Prisma e TypeScript, 
 ---
 
 ### Status do Projeto
-(Em Desenvolvimento 🚧)
+(✅ Finalizado!)
 
 ---
 
