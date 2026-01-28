@@ -13,4 +13,7 @@ linkRoutes.get("/", (req, res) => linkController.getAllLinks(req, res));
 // GET /links/:id
 linkRoutes.get("/:id", (req, res) => linkController.getLinkById(req, res));
 
+// DELETE /links/:id
+linkRoutes.delete("/:id", (req, res) => linkController.deleteLinkById(req, res));
+
 export default linkRoutes;
