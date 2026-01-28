@@ -10,5 +10,10 @@ export default class LinkService {
       },
     });
     return MapStatusHttp.createdData(newLink);
-  }
+  };
+
+  async getAll() {
+    const links = await prisma.link.findMany();
+    return MapStatusHttp.okData(links);
+  };  
 }
