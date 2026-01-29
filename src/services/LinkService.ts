@@ -26,6 +26,14 @@ export default class LinkService {
     return MapStatusHttp.okData(link);
   };
 
+  async updateById(id: number, title: string, url: string) {
+    const link = await prisma.link.update({
+      where: { id },
+      data: { title, url },
+    });
+    return MapStatusHttp.okData(link);
+  };
+
   async deleteById(id: number) {
     const link = await prisma.link.delete({where: {id}});
     return MapStatusHttp.okData(link);
